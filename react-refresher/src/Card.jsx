@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Card({ title }) {
+const Card = ({ title }) => {
+    const [ hasLiked, setHasLiked] = useState(false);
   return (
-    <div>
+    <div className="card">
       <h1>{title}</h1>
+     <button onClick={() => setHasLiked(!hasLiked)}>
+        { hasLiked ? 'Liked' : 'Like' }
+     </button>
     </div>
   )
 }
 
-export default Card
+export default Card;
