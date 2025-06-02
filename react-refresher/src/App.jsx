@@ -1,17 +1,12 @@
-import Card from "./Card"
-
-
-
-
-
 const App = () =>{
+
+
   return(
-    <div className="card-container">
-      <Card title="Avatali One" />
-      <Card title="Avatali Two" />
-      <Card title="Avatali Three" />
+    <div>
+      <h1 className=" text-2xl underline text-blue-300">Movie App</h1>
     </div>
   )
 }
+
 
 export default App;
